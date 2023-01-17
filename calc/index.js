@@ -137,7 +137,7 @@ function calculations(){
    let button = document.querySelectorAll("button");
    for(let l=0; l<button.length; l++){
     button[l].addEventListener("click",function(){
-      let audio = new Audio("Alfred .mp3");
+      let audio = new Audio("calc/Alfred .mp3");
       audio.play();
     })
    }
