@@ -5,36 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="calc/index.css">
 </head>
 <body  onload="year()">
     <div id="calculator">
         <section>
-            <span id="results"></span><br><br><br>
-            <span id="roots"></span> 
-            <span id="num">00</span>
-            <span id="operational"></span>
-            
+            <div id="sup1"><sup></sup>&nbsp;&nbsp;<sup id="sup2" >D</sup><sup id="sup">REG</sup></div>
+            <span id="results"></span>
+            <span id="insert">
+              <span id="operational"></span>
+              <span id="num">0</span>
+            </span>
         </section>
         <div style="padding: 4px; padding-top: 8px;">
+            <button id="off">SHIFT</button>
             <button id="myName">J</button>
             <button id="myName">U</button>
             <button id="myName">M</button>
-            <button id="myName"3>A</button>
-            <button id="off" onclick="off()">OFF</button>
-            <button class="off">sin</button>
-            <button class="off">cos</button>
-            <button class="off">tan</button>
-            <button class="off">log</button>
-            <button class="off">ant</button>
-            <button class="off">&Sqrt;</button>
-            <button class="offa" onclick="roots.innerHTML=this.value" value="&sup3;">x&sup3;</button>
-            <button class="off">&#x221B;</button>
-            <button id="pow" class="offa" onclick="operant(this)">^</button>
-            <button class="offa" onclick="roots.innerHTML=this.value" value="&sup2;">x&sup2;</button>
+            <button id="myName">A</button>
+            <article>
+                <button disabled>&Sqrt;</button>
+                <button disabled >sin<sup>-1</sup></button>
+                <button disabled >cos<sup>-1</sup></button>
+                <button disabled >tan<sup>-1</sup></button>
+                <button disabled>10<sup>x</sup></button>
+            </article>
+            <button class="btn-val" value="&sup2;">x&sup2;</button>
+            <button class="off bt-val">sin</button>
+            <button class="off bt-val">cos</button>
+            <button class="off bt-val">tan</button>
+            <button class="off bt-val">log</button>
+            <article>
+                <button disabled>&#x221B;</button>
+                <button disabled></button>
+                <button disabled></button>
+                <button disabled><sup>n</sup>&Sqrt;a</button>
+                <button disabled>M-</button>
+            </article>
+            <button class="btn-val" value="&sup3;">x&sup3;</button>
+            <button id="bras" onclick="operant(this)">(</button>
+            <button id="brace" onclick="operant(this)">)</button>
+            <button value="^" class="btn-val">^</button>
+            <button id="pow" class="off" disabled>M+</button>
         </div>    
             <div id="calculations">
                 <div id="btns">
+                    <button id="dot" class="off" onclick="operant(this)">.</button>
+                    <button id="btn" class="off">0</button> 
+                    <button class="off" onclick="jumez()">+/-</button>
                     <button id="btn" class="off">1</button> 
                     <button id="btn" class="off">2</button> 
                     <button id="btn" class="off">3</button> 
@@ -44,13 +62,10 @@
                     <button id="btn" class="off">7</button> 
                     <button id="btn" class="off">8</button> 
                     <button id="btn" class="off">9</button> 
-                    <button id="dot" class="off" onclick="operant(this)">.</button>
-                    <button id="btn" class="off">0</button> 
-                    <button class="off" onclick="jumez()">+/-</button>
                 </div>    
                 <div id="calcu">
                     <button id="del" class="off" onclick="operant(this)">DEL</button>
-                    <button id="ac" class="off" onclick="operant(this)">AC</button>
+                    <button id="ac" class="off" >AC</button>
                     <button id="add" class="off" onclick="operant(this)">+</button>
                     <button id="sub" class="off" onclick="operant(this)">-</button>
                     <button id="mult" class="off" onclick="operant(this)">*</button>
@@ -58,8 +73,8 @@
                     <button id="ans" class="off" onclick="calculations()">=</button>
                 </div>
         </div>
-        <h3 id="years">© <span id="year"></span> JUMALFRED</h3>
+        <h3 id="years">© <span id="year"></span> JASDEs Solutions</h3>
     </div>
-    <script src="index.js"></script>
+    <script src="calc/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,188 @@
+#calculator{
+    height: 540px;
+    width: 270px;
+    background-color: rgb(32, 29, 29);
+    border-radius: 10px;
+    padding-left: 2.1%;
+    padding-right: 2.1%;
+    padding-top: 2.222%;
+    padding-bottom: 2.222%;
+}
+article{
+   display: flex;
+}
+article > button{
+   height: 27px;
+   padding: 0;
+   margin-left: 2.5px;
+   background-color: rgb(32, 29, 29);
+   color: brown;
+   border: none;
+   padding-top: 2px;
+   padding-bottom: -1px;
+   font-weight: normal;
+   font-size: small;
+   pointer-events: none;
+}
+section{
+    height: 12.8%;
+    width: 92.59%;
+    margin: auto;
+    padding: 4px;
+    padding-top: 0px;
+    margin-bottom: 2%;
+    background-color: lightgoldenrodyellow;
+    overflow: auto;
+    border-radius: 6px 6px 7px 7px;
+    border-right: 4px solid grey;
+    border-left: 4px solid grey;
+    border-top: 4px solid lightgrey;
+    border-bottom: 4px solid lightgrey;
+    position: relative;
+}
+button{
+   width: 49.2px;
+   height: 47px;
+   border-radius: 10px;
+   padding: 2px;
+   /* padding-right: 4px; */
+    font-weight: bolder;
+   font-size: larger;
+   background-color: lightgray;
+   /* border-right: 5px solid grey;
+   border-left: 5px solid grey;
+   border-bottom: 5px solid lightgray;
+   border-top: 5px solid lightgray; */
+}
+button:hover{
+   background-color: bisque;
+}
+#ac{
+ background-color: green;
+}
+#del{
+ background-color: red;
+}
+#btns{
+   width: 58%;
+   padding: 10px 1px 0px 6px ;
+   display: flex;
+   flex-wrap: wrap-reverse;
+   padding-top: 5px;
+}
+#calcu{
+   width: 42%;
+   float: right;
+   padding: 10px 1px 0px 6px ;
+   display: flex;
+   flex-wrap: wrap;
+}
+#calculations{
+   display: flex;
+   margin: auto;
+   font-weight: 600px;
+   padding-top: 2.78%;
+}
+.btn-val,.bt-val,#bras,#brace,#pow{
+   height: 33px;
+}
+span{
+   font-weight: bolder;
+   color: blueviolet;
+}
+#results{
+   float: left;
+   font-size: xx-large;
+   cursor: pointer;
+   color: brown;
+   top: 0;
+   left: 0;
+}
+#insert{
+   float: right;
+   font-size: larger;
+   bottom: 3px;
+   right: 8px;
+   position: absolute;
+}
+#years{
+   color: blueviolet;
+   padding-left: 14.2%;
+}
+#ans{
+ width: 98px;
+ background-color: rgb(57, 57, 192);
+}
+#myName{
+   color: blueviolet;
+   background-color: rgb(26, 25, 25);
+   pointer-events: none;
+}
+#off:first-of-type{
+   font-weight: normal;
+   font-size: smaller;
+}
+#sup{
+   float: right;
+   margin-right: 20%;
+}
+#sup1{
+   height: 10px;
+  /* padding-right: 60%;*/
+}
+#sup2{
+   background-color: rgb(143, 109, 109);
+    float: right;
+    margin-right: 20%;
+    padding: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+@media screen and (max-width : 650px) {
+   body{
+      margin: 0;
+   }
+   #calculator{
+       height: 97.556vh;
+       width: 49.8%;
+       border-radius: 0;
+   }
+   #years{
+     padding-right: 18.81%;
+     /* margin: auto; */
+     text-align: center;
+   }
+   button{
+    width: 50.8px;
+    height: 50px;
+    /* margin-left: 6px; */
+    margin-right: 6px;
+   }
+   #ans{
+      width: 127.44px;
+   }
+}
+@media screen and (max-width : 400px) {
+   body{
+      margin: 0;
+   }
+   #calculator{
+       height: 97.556vh;
+       width: 95.8%;
+       border-radius: 0;
+   }
+   #years{
+     padding-right: 18.81%;
+     /* margin: auto; */
+     text-align: center;
+   }
+   button{
+    width: 55.8px;
+    height: 60px;
+    /* margin-left: 6px; */
+    margin-right: 8px;
+   }
+   #ans{
+      width: 127.44px;
+   }
+}

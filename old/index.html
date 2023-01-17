@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="index.css">
+</head>
+<body  onload="year()">
+    <div id="calculator">
+        <section>
+            <span id="results"></span><br><br><br>
+            <span id="roots"></span> 
+            <span id="num">00</span>
+            <span id="operational"></span>
+            
+        </section>
+        <div style="padding: 4px; padding-top: 8px;">
+            <button id="myName">J</button>
+            <button id="myName">U</button>
+            <button id="myName">M</button>
+            <button id="myName"3>A</button>
+            <button id="off" onclick="off()">OFF</button>
+            <button class="off">sin</button>
+            <button class="off">cos</button>
+            <button class="off">tan</button>
+            <button class="off">log</button>
+            <button class="off">ant</button>
+            <button class="off">&Sqrt;</button>
+            <button class="offa" onclick="roots.innerHTML=this.value" value="&sup3;">x&sup3;</button>
+            <button class="off">&#x221B;</button>
+            <button id="pow" class="offa" onclick="operant(this)">^</button>
+            <button class="offa" onclick="roots.innerHTML=this.value" value="&sup2;">x&sup2;</button>
+        </div>    
+            <div id="calculations">
+                <div id="btns">
+                    <button id="btn" class="off">1</button> 
+                    <button id="btn" class="off">2</button> 
+                    <button id="btn" class="off">3</button> 
+                    <button id="btn" class="off">4</button> 
+                    <button id="btn" class="off">5</button> 
+                    <button id="btn" class="off">6</button> 
+                    <button id="btn" class="off">7</button> 
+                    <button id="btn" class="off">8</button> 
+                    <button id="btn" class="off">9</button> 
+                    <button id="dot" class="off" onclick="operant(this)">.</button>
+                    <button id="btn" class="off">0</button> 
+                    <button class="off" onclick="jumez()">+/-</button>
+                </div>    
+                <div id="calcu">
+                    <button id="del" class="off" onclick="operant(this)">DEL</button>
+                    <button id="ac" class="off" onclick="operant(this)">AC</button>
+                    <button id="add" class="off" onclick="operant(this)">+</button>
+                    <button id="sub" class="off" onclick="operant(this)">-</button>
+                    <button id="mult" class="off" onclick="operant(this)">*</button>
+                    <button id="div" class="off" onclick="operant(this)">/</button>
+                    <button id="ans" class="off" onclick="calculations()">=</button>
+                </div>
+        </div>
+        <h3 id="years">© <span id="year"></span> JUMALFRED</h3>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
